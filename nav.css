@@ -1,0 +1,237 @@
+*,
+body,
+::after,
+::before,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+aside,
+section,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+:root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Global Colors */
+:root {
+
+  --color-white: #ffffff;
+
+  --color-black: #000;
+
+  --color-darkblue: #0065a1;
+
+  --color-blue: #3cb4e5;
+
+  --color-orange: #ff9015;
+
+  --color-text: #333f48;
+
+  --color-lightblue: #e5e9f8;
+
+  --color-lightgrey: #f4f5f9;
+
+}
+
+.color-darkblue{
+  color: var(--color-darkblue);
+}
+
+.color-orange{
+  color: var(--color-orange);
+}
+
+.bg-lightgrey {
+  background-color: var(--color-lightgrey);
+}
+
+/*--------- # General -----------------*/
+body {
+  color: var(--color-text);
+  font-family: var(--default-font);
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  text-transform: none;
+}
+
+
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+* :focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+
+
+.full-width {
+  width: 100%;
+  float: left;
+}
+
+.img-cover{
+  object-fit: cover;
+}
+
+
+/* ---------- NAVBAR START-------------- */
+
+nav .navbar-brand img{
+  height: 90px;
+  object-fit: cover;
+}
+
+.navbar-nav li {
+  padding: 0 15px;
+} 
+
+.navbar-nav li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.navbar-nav .nav-link.active{
+  color: var(--color-darkblue);
+}
+
+.navbar-nav li a:hover {
+  color: var(--color-orange)
+}
+
+.nav-contact a{
+  font-size: 20px;
+}
+
+.nav-contact a i{
+  color: var(--color-orange);
+
+}
+
+nav .navbar-nav .dropdown-menu {
+  width: 300px;
+  box-shadow: 1px 4px 11px 3px #0000001c;
+  border: none;
+}
+
+.mobile-contact-btn{
+    display: none;
+}
+
+
+/* Responisve */
+button.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+
+/* ---------- NAVBAR END-------------- */
+
+
+@media screen and (min-width: 1200px)  {
+  
+    
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)  {
+    nav .nav-contact{
+        visibility: hidden;
+    }
+
+
+    .mobile-contact-btn{
+        display: block;
+    }
+    
+    .mobile-contact-btn a {
+        font-size: 24px;
+    }
+
+    #navbarSupportedContent {
+        box-shadow: 1px 4px 11px 3px #0000001c;
+    }
+
+
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+
+    nav .nav-contact{
+        visibility: hidden;
+    }
+
+    .mobile-contact-btn{
+        display: block;
+    }
+
+    .mobile-contact-btn a {
+        font-size: 20px;
+    }
+
+    #navbarSupportedContent {
+        box-shadow: 1px 4px 11px 3px #0000001c;
+    }
+
+  
+}
+
+@media screen and (min-width: 350px)  and (max-width: 574px) {
+
+    nav .nav-contact{
+        visibility: hidden;
+    }
+
+    .mobile-contact-btn{
+        display: block;
+    }
+
+    .mobile-contact-btn a {
+        font-size: 14px;
+    }
+
+    .navbar-toggler-icon{
+        width: 1.2rem;
+    }
+
+    nav .navbar-brand img{
+        height: 45px;
+        object-fit: cover;
+    }
+    nav .navbar-brand img{
+        margin-right: 0;
+    }
+
+    #navbarSupportedContent {
+        box-shadow: 1px 4px 11px 3px #0000001c;
+    }
+
+
+}

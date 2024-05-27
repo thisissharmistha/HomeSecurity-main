@@ -1,0 +1,574 @@
+*,
+body,
+::after,
+::before,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+aside,
+section,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+:root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Global Colors */
+:root {
+
+  --color-white: #ffffff;
+
+  --color-black: #000;
+
+  --color-darkblue: #0065a1;
+
+  --color-blue: #3cb4e5;
+
+  --color-orange: #ff9015;
+
+  --color-text: #333f48;
+
+  --color-lightblue: #e5e9f8;
+
+  --color-lightgrey: #f4f5f9;
+
+}
+
+.color-darkblue{
+  color: var(--color-darkblue);
+}
+
+.color-orange{
+  color: var(--color-orange);
+}
+
+.bg-lightgrey {
+  background-color: var(--color-lightgrey);
+}
+
+/*--------- # General -----------------*/
+body {
+  color: var(--color-text);
+  font-family: var(--default-font);
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  text-transform: none;
+}
+
+
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+
+* :focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 28px;
+  color: var(--color-darkblue);
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 34px;
+}
+
+h5 {
+  line-height: 22px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.full-width {
+  width: 100%;
+  float: left;
+}
+
+.img-cover{
+  object-fit: cover;
+}
+
+/* CTA button */
+.cmnBtn {
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: var(--color-blue);
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.cmnBtn:hover {
+  background-color: var(--color-orange);
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* SWIPER CSS */
+
+.swiper {
+  width: 100%;
+  height: 93%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SWIPER CSS END */
+
+/* Orange line divider */
+.divider {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-orange);
+}
+
+.divider-sm {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: var(--color-orange);
+}
+
+/* home-banner */
+.right-col {
+  border: 2px solid var(--color-lightblue);
+}
+
+.right-col .banner-img {
+  height: 320px;
+}
+
+.right-col ul li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.right-col ul li svg {
+  padding-right: 5px;
+}
+
+/* why-choose */
+.why-choose img,
+.monitoring img,
+.video-doorbell img,
+.wireless-home img,
+.alarm-system img
+{
+  height: 400px;
+}
+
+/* Footer Form */
+.footer-form{
+  background-image: url(https://homesecuritysystems-local.com/wp-content/uploads/2019/07/SafeStreets-ADT-Security.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form{
+  width: 600px;
+  position: absolute;
+  transform: translate(0%,-50%);
+  top: 100%;
+}
+
+/* ---------- NAVBAR START-------------- */
+
+nav .navbar-brand img{
+  height: 90px;
+  object-fit: cover;
+}
+
+.navbar-nav li {
+  padding: 0 15px;
+} 
+
+.navbar-nav li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.navbar-nav .nav-link.active{
+  color: var(--color-darkblue);
+}
+
+.navbar-nav li a:hover {
+  color: var(--color-orange)
+}
+
+.nav-contact a{
+  font-size: 20px;
+}
+
+.nav-contact a i{
+  color: var(--color-orange);
+
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  width: 300px;
+}
+
+
+/* Responisve */
+button.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+
+/* ---------- NAVBAR END-------------- */
+
+
+@media screen and (max-width: 1026px)  {
+  
+  h1 {
+    font-size: 36px;
+    line-height: 28px;
+    color: var(--color-darkblue);
+  }
+  
+  h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  
+  h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  
+  h5 {
+    line-height: 26px;
+  }
+  
+  .section {
+    padding: 20px 0;
+  }
+  
+  .right-col{
+    margin-top: 2.5rem;
+  }
+
+  /* WHY CHOOSE */
+
+  .why-choose .img {
+    padding-top: 1rem;
+    justify-content: center!important;
+  }
+
+  .why-choose .content {
+    /* text-align: center; */
+  }
+
+  /* MONITORING */
+
+  .monitoring .img{
+    display: flex;
+    justify-content: center!important;
+  }
+
+  .monitoring .content,
+  .Secure24 .content,
+  .video-doorbell .content,
+  .wireless-home .content,
+  .alarm-system .content{
+    padding-left: 0!important;
+    padding-top: 1rem;
+    /* text-align: center; */
+  }
+
+  /* <!--Additional Secure24 --> */
+  .Secure24 .img,
+  .wireless-home .img,
+  .alarm-system .img{
+    padding-left: 0!important;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Footer Form */
+
+    .footer-form .row{
+    justify-content: center;
+  }
+
+  .footer-form{
+    background: var(--color-darkblue);
+    color: var(--color-white);
+  }
+
+
+
+  .form{
+    width: 100%;
+    position: static;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px)  {
+
+  h1 {
+    font-size: 36px;
+    line-height: 28px;
+    color: var(--color-darkblue);
+  }
+  
+  h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  
+  h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  
+  h5 {
+    line-height: 26px;
+  }
+  
+  .section {
+    padding: 20px 0;
+  }
+  
+  .right-col{
+    margin-top: 2.5rem;
+  }
+
+  /* WHY CHOOSE */
+
+  .why-choose .img {
+    padding-top: 1rem;
+    justify-content: center!important;
+  }
+
+  .why-choose .content {
+    /* text-align: center; */
+  }
+
+  /* MONITORING */
+
+  .monitoring .img{
+    display: flex;
+    justify-content: center!important;
+  }
+
+  .monitoring .content,
+  .Secure24 .content,
+  .video-doorbell .content,
+  .wireless-home .content,
+  .alarm-system .content{
+    padding-left: 0!important;
+    padding-top: 1rem;
+    /* text-align: center; */
+  }
+
+  /* <!--Additional Secure24 --> */
+  .Secure24 .img,
+  .wireless-home .img,
+  .alarm-system .img{
+    padding-left: 0!important;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Footer Form */
+
+    .footer-form .row{
+    justify-content: center;
+  }
+
+  .footer-form{
+    background: var(--color-darkblue);
+    color: var(--color-white);
+  }
+
+  .form{
+    width: 100%;
+    position: static;
+  }
+  
+
+}
+
+@media screen and (min-width: 575px)  {
+  
+}
+
+@media screen and (min-width: 350px)  and (max-width: 767px) {
+  
+  h1 {
+    font-size: 26px;
+    line-height: 28px;
+    color: var(--color-darkblue);
+  }
+  
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  h5 {
+    line-height: 26px;
+  }
+  
+  .section {
+    padding: 15px 0;
+  }
+  
+  .right-col{
+    margin-top: 4.5rem;
+  }
+
+  .home-banner .right-col{
+    padding: 10px;
+  }
+
+    /* CTA button */
+  .cmnBtn {
+    padding: 10px!important;
+    font-size: 18px;
+  }
+
+
+  /* Responsive Navbar */
+  nav .navbar-brand img{
+    height: 40px;
+    object-fit: cover;
+  }
+
+
+  /* fast-installation */
+  .fast-installation h5{
+    font-size: 18px;
+    color: var(--color-darkblue);
+  }
+
+
+  /* WHY CHOOSE */
+
+  .why-choose .img {
+    padding-top: 1rem;
+    justify-content: center;
+  }
+
+  .why-choose .content {
+    /* text-align: center!important; */
+  }
+
+  /* MONITORING */
+
+  .monitoring .img{
+    padding-bottom: 1rem!important;
+    display: flex;
+    justify-content: center!important;
+  }
+
+  .monitoring .content,
+  .Secure24 .content,
+  .video-doorbell .content,
+  .wireless-home .content,
+  .alarm-system .content{
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+    padding-top: 0!important;
+    padding-bottom: 1rem!important;
+    /* text-align: center!important; */
+  }
+
+  /* <!--Additional Secure24 --> */
+  .Secure24 .img,
+  .wireless-home .img,
+  .alarm-system .img{
+    padding-left: 0.5rem!important;
+    padding-right: 0.5rem!important;
+    padding-bottom: 1rem!important;
+    display: flex;
+    justify-content: center!important;
+  }
+
+  /* Image heights adjustments */
+    .video-doorbell .img img,
+    .wireless-home .img img,
+    .alarm-system .img img{
+      height: 250px;
+      padding-bottom: 1rem;
+    }
+
+  /* Call Today */
+    .call-today h5{
+      font-size: 18px;
+    }
+
+
+
+}
